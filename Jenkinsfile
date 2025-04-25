@@ -2,7 +2,7 @@ pipeline {
     agent any // Runs on the Jenkins controller or any available agent
 
     environment {
-        DOCKERHUB_CREDENTIALS_ID = 'none' // ID from Jenkins Credentials
+        DOCKERHUB_CREDENTIALS_ID = '4772' // ID from Jenkins Credentials
         DOCKER_IMAGE_NAME      = "itzaqeel/gcu-cw2-server" // Your DockerHub user/repo
         PROD_SERVER_SSH_CREDS  = 'prod-server-ssh' // ID for SSH credentials to Production Server
         PROD_SERVER_IP         = '18.215.249.26' // Production Server IP
