@@ -2,9 +2,9 @@ pipeline {
     agent any // Runs on the Jenkins controller or any available agent
 
     environment {
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-creds' // ID from Jenkins Credentials
-        DOCKER_IMAGE_NAME      = "itzaqeel/cw2-server" // Your DockerHub user/repo
-        PROD_SERVER_SSH_CREDS  = 'https://github.com/Itzaqeel1/gcu-devops-cw2.git' // ID for SSH credentials to Production Server
+        DOCKERHUB_CREDENTIALS_ID = 'none' // ID from Jenkins Credentials
+        DOCKER_IMAGE_NAME      = "itzaqeel/gcu-cw2-server" // Your DockerHub user/repo
+        PROD_SERVER_SSH_CREDS  = 'prod-server-ssh' // ID for SSH credentials to Production Server
         PROD_SERVER_IP         = '18.215.249.26' // Production Server IP
         // KUBE_CONTEXT           = 'minikube' // Assuming kubectl on Prod Server uses minikube context
     }
